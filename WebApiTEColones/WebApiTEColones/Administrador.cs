@@ -14,25 +14,9 @@ namespace WebApiTEColones
     
     public partial class Administrador
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Administrador()
-        {
-            this.HistorialPromocions = new HashSet<HistorialPromocion>();
-            this.HistorialTipoBeneficios = new HashSet<HistorialTipoBeneficio>();
-            this.HistorialTipoMaterials = new HashSet<HistorialTipoMaterial>();
-        }
-    
         public int IdAdmi { get; set; }
-        public int IdInformacionBasica { get; set; }
-        public int IdDepartamento { get; set; }
     
         public virtual Departamento Departamento { get; set; }
         public virtual InformacionBasica InformacionBasica { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialPromocion> HistorialPromocions { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialTipoBeneficio> HistorialTipoBeneficios { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialTipoMaterial> HistorialTipoMaterials { get; set; }
     }
 }

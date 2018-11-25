@@ -15,13 +15,11 @@ namespace WebApiTEColones
     public partial class CambioBeneficioEstudiante
     {
         public int IdCambioBeneficioEstudiante { get; set; }
-        public int IdHistorialTipoBeneficio { get; set; }
-        public int IdEstudiante { get; set; }
         public double TecolonesCambio { get; set; }
         public double ColonesAdquiridos { get; set; }
         public System.DateTime FechaCambio { get; set; }
     
+        public virtual TipoBeneficio TipoBeneficio { get; set; }
         public virtual Estudiante Estudiante { get; set; }
-        public virtual HistorialTipoBeneficio HistorialTipoBeneficio { get; set; }
     }
 }

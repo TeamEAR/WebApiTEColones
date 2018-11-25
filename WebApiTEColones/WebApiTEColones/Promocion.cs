@@ -17,15 +17,17 @@ namespace WebApiTEColones
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Promocion()
         {
-            this.HistorialPromocions = new HashSet<HistorialPromocion>();
+            this.CambioMaterialEstudiantes = new HashSet<CambioMaterialEstudiante>();
         }
     
         public int IdPromocion { get; set; }
         public string NombrePromocion { get; set; }
         public string DescripcionPromocion { get; set; }
+        public Nullable<System.DateTime> FechaInicio { get; set; }
+        public Nullable<System.DateTime> FechaFin { get; set; }
         public bool EstadoPromocion { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialPromocion> HistorialPromocions { get; set; }
+        public virtual ICollection<CambioMaterialEstudiante> CambioMaterialEstudiantes { get; set; }
     }
 }

@@ -17,15 +17,17 @@ namespace WebApiTEColones
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TipoMaterial()
         {
-            this.HistorialTipoMaterials = new HashSet<HistorialTipoMaterial>();
+            this.CambioMaterialEstudiantes = new HashSet<CambioMaterialEstudiante>();
         }
     
         public int IdTipoMaterial { get; set; }
         public string NombreTipoMaterial { get; set; }
         public string CaracteristicaMaterial { get; set; }
+        public double PesoBaseMaterial { get; set; }
+        public double EquivalenciaTecolones { get; set; }
         public bool EstadoMaterial { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialTipoMaterial> HistorialTipoMaterials { get; set; }
+        public ICollection<CambioMaterialEstudiante> CambioMaterialEstudiantes { get; set; }
     }
 }

@@ -22,7 +22,6 @@ namespace WebApiTEColones
     
         public int IdCentroAcopio { get; set; }
         public string Ubicacion { get; set; }
-        public int IdSedeXTEC { get; set; }
         public string Identificador { get; set; }
     
         public virtual SedeXTEC SedeXTEC { get; set; }

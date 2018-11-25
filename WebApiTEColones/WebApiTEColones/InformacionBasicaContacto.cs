@@ -15,8 +15,6 @@ namespace WebApiTEColones
     public partial class InformacionBasicaContacto
     {
         public int IdContacto { get; set; }
-        public int IdInformacionBasica { get; set; }
-        public int IdTipoContacto { get; set; }
         public string Contacto { get; set; }
     
         public virtual InformacionBasica InformacionBasica { get; set; }

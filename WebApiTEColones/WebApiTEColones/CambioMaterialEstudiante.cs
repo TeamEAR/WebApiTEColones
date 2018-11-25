@@ -15,17 +15,13 @@ namespace WebApiTEColones
     public partial class CambioMaterialEstudiante
     {
         public int IdCambioMaterialEstudiante { get; set; }
-        public int IdHistorialTipoMaterial { get; set; }
-        public int IdEstudiante { get; set; }
-        public int IdEncargadoCentroAcopio { get; set; }
-        public Nullable<int> IdHistorialPromocion { get; set; }
         public System.DateTime FechaCambio { get; set; }
         public double PesoReciclaje { get; set; }
         public double TecolonesAdquiridos { get; set; }
     
         public virtual EncargadoCentroAcopio EncargadoCentroAcopio { get; set; }
         public virtual Estudiante Estudiante { get; set; }
-        public virtual HistorialPromocion HistorialPromocion { get; set; }
-        public virtual HistorialTipoMaterial HistorialTipoMaterial { get; set; }
+        public virtual Promocion Promocion { get; set; }
+        public virtual TipoMaterial TipoMaterial { get; set; }
     }
 }

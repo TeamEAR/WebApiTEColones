@@ -21,8 +21,6 @@ namespace WebApiTEColones
         }
     
         public int IdEncargadoCentroAcopio { get; set; }
-        public int IdInformacionBasica { get; set; }
-        public int IdCentroAcopio { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CambioMaterialEstudiante> CambioMaterialEstudiantes { get; set; }

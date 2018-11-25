@@ -17,15 +17,16 @@ namespace WebApiTEColones
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TipoBeneficio()
         {
-            this.HistorialTipoBeneficios = new HashSet<HistorialTipoBeneficio>();
+            this.CambioBeneficioEstudiantes = new HashSet<CambioBeneficioEstudiante>();
         }
     
         public int IdTipoBeneficio { get; set; }
         public string NombreBeneficio { get; set; }
         public string DescripcionBeneficio { get; set; }
+        public double CantidadBaseTecolones { get; set; }
         public bool EstadoBeneficio { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistorialTipoBeneficio> HistorialTipoBeneficios { get; set; }
+        public virtual ICollection<CambioBeneficioEstudiante> CambioBeneficioEstudiantes { get; set; }
     }
 }

@@ -29,7 +29,6 @@ namespace WebApiTEColones
         public string SegundoApellido { get; set; }
         public string Identificacion { get; set; }
         public string Contraseña { get; set; }
-        public int IdTipoRol { get; set; }
         public bool EstadoCuenta { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

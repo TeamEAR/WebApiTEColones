@@ -26,8 +26,6 @@ namespace WebApiTEColones
         public string Pasatiempo { get; set; }
         public string SobreMi { get; set; }
         public byte[] FotoPerfil { get; set; }
-        public int IdSedeXTEC { get; set; }
-        public int IdInformacionBasica { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CambioBeneficioEstudiante> CambioBeneficioEstudiantes { get; set; }
