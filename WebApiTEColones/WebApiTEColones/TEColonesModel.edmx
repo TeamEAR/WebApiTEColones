@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TEColonesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="TEColonesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Administrador">
           <Key>
             <PropertyRef Name="IdAdmi" />
@@ -488,6 +488,7 @@
           <Parameter Name="PesoBaseMaterial" Type="float" Mode="In" />
           <Parameter Name="EquivalenciaTEColones" Type="float" Mode="In" />
         </Function>
+        <Function Name="Tacometro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="TEColonesModelStoreContainer">
           <EntitySet Name="Administrador" EntityType="Self.Administrador" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="BitacoraBeneficio" EntityType="Self.BitacoraBeneficio" Schema="dbo" store:Type="Tables" />
@@ -572,8 +573,7 @@
             <End Role="InformacionBasicaContacto" EntitySet="InformacionBasicaContacto" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TEColonesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -978,7 +978,7 @@
             <Parameter Name="TipoContacto" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="InsertarDepartamento" ReturnType="Collection(TEColonesModel.InsertarDepartamento_Result)">
-            <Parameter Name="NombreDepartamento" Mode="In" Type="String" />
+          <Parameter Name="NombreDepartamento" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="InsertarEstudiante" ReturnType="Collection(TEColonesModel.InsertarEstudiante_Result)">
             <Parameter Name="Nombre" Mode="In" Type="String" />
@@ -1009,10 +1009,10 @@
             <Parameter Name="UbicacionSede" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="InsertarTipoContacto" ReturnType="Collection(TEColonesModel.InsertarTipoContacto_Result)">
-            <Parameter Name="NombreTipoContacto" Mode="In" Type="String" />
+          <Parameter Name="NombreTipoContacto" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="InsertarTipoRol" ReturnType="Collection(TEColonesModel.InsertarTipoRol_Result)">
-            <Parameter Name="NombreRol" Mode="In" Type="String" />
+          <Parameter Name="NombreRol" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="NuevaPromocion" ReturnType="Collection(TEColonesModel.NuevaPromocion_Result)">
             <Parameter Name="NombrePromocion" Mode="In" Type="String" />
@@ -1031,6 +1031,7 @@
             <Parameter Name="PesoBaseMaterial" Mode="In" Type="Double" />
             <Parameter Name="EquivalenciaTEColones" Mode="In" Type="Double" />
           </FunctionImport>
+          <FunctionImport Name="Tacometro" ReturnType="Collection(Double)" />
         </EntityContainer>
         <ComplexType Name="ActualizarTipo_Result">
           <Property Type="String" Name="ErrorProcedimiento" Nullable="true" MaxLength="128" />
@@ -1544,6 +1545,7 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Tacometro" FunctionName="TEColonesModel.Store.Tacometro" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

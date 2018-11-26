@@ -28,6 +28,6 @@ namespace WebApiTEColones
         public bool EstadoMaterial { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public ICollection<CambioMaterialEstudiante> CambioMaterialEstudiantes { get; set; }
+        public virtual ICollection<CambioMaterialEstudiante> CambioMaterialEstudiantes { get; set; }
     }
 }

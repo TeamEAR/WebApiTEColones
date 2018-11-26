@@ -32,7 +32,6 @@ namespace WebApiTEColones.Controllers
             {
                 return NotFound();
             }
-
             return Ok(tipoMaterial);
         }
 

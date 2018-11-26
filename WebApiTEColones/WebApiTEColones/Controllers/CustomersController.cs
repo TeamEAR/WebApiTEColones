@@ -10,7 +10,7 @@ namespace WebApiTEColones.Controllers
     /// <summary>
     /// customer controller class for testing security token
     /// </summary>
-    [Authorize]
+    //[Authorize]
     [RoutePrefix("api/customers")]
     public class CustomersController : ApiController
     {

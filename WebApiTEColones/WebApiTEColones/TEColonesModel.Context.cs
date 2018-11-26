@@ -425,5 +425,10 @@ namespace WebApiTEColones
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<NuevoTipoMaterial_Result>("NuevoTipoMaterial", nombreTipoMaterialParameter, caracteristicaMaterialParameter, pesoBaseMaterialParameter, equivalenciaTEColonesParameter);
         }
+    
+        public virtual ObjectResult<Nullable<double>> Tacometro()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<double>>("Tacometro");
+        }
     }
 }
