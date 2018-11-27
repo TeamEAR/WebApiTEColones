@@ -324,6 +324,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.config" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\WebApiTEColones - Web Deploy.pubxml" />
     <EntityDeploy Include="TEColonesModel.edmx">
