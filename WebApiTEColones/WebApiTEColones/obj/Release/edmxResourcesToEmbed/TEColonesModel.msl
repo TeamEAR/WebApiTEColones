@@ -444,5 +444,48 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="Tacometro" FunctionName="TEColonesModel.Store.Tacometro" />
+    <FunctionImportMapping FunctionImportName="ColumnaSimple" FunctionName="TEColonesModel.Store.ColumnaSimple">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TEColonesModel.ColumnaSimple_Result">
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="PesoTotal" ColumnName="PesoTotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FilaApilada" FunctionName="TEColonesModel.Store.FilaApilada">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TEColonesModel.FilaApilada_Result">
+          <ScalarProperty Name="NombreBeneficio" ColumnName="NombreBeneficio" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TOP10" FunctionName="TEColonesModel.Store.TOP10">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TEColonesModel.TOP10_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Carnet" ColumnName="Carnet" />
+          <ScalarProperty Name="NombreSedeXTEC" ColumnName="NombreSedeXTEC" />
+          <ScalarProperty Name="Cantidad_Material" ColumnName="Cantidad Material" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TEColonesEntregados" FunctionName="TEColonesModel.Store.TEColonesEntregados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TEColonesModel.TEColonesEntregados_Result">
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ToneladasSede" FunctionName="TEColonesModel.Store.ToneladasSede">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TEColonesModel.ToneladasSede_Result">
+          <ScalarProperty Name="Sede" ColumnName="Sede" />
+          <ScalarProperty Name="PesoTotal" ColumnName="PesoTotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

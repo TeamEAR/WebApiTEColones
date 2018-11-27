@@ -455,6 +455,11 @@
       <Parameter Name="EquivalenciaTEColones" Mode="In" Type="Double" />
     </FunctionImport>
     <FunctionImport Name="Tacometro" ReturnType="Collection(Double)" />
+    <FunctionImport Name="ColumnaSimple" ReturnType="Collection(TEColonesModel.ColumnaSimple_Result)" />
+    <FunctionImport Name="FilaApilada" ReturnType="Collection(TEColonesModel.FilaApilada_Result)" />
+    <FunctionImport Name="TOP10" ReturnType="Collection(TEColonesModel.TOP10_Result)" />
+    <FunctionImport Name="TEColonesEntregados" ReturnType="Collection(TEColonesModel.TEColonesEntregados_Result)" />
+    <FunctionImport Name="ToneladasSede" ReturnType="Collection(TEColonesModel.ToneladasSede_Result)" />
   </EntityContainer>
   <ComplexType Name="ActualizarTipo_Result">
     <Property Type="String" Name="ErrorProcedimiento" Nullable="true" MaxLength="128" />
@@ -519,5 +524,28 @@
   <ComplexType Name="NuevoTipoMaterial_Result">
     <Property Type="String" Name="ErrorProcedimiento" Nullable="true" MaxLength="128" />
     <Property Type="String" Name="TipoError" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+  <ComplexType Name="ColumnaSimple_Result">
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="Double" Name="PesoTotal" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="FilaApilada_Result">
+    <Property Type="String" Name="NombreBeneficio" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="Double" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="TOP10_Result">
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="102" />
+    <Property Type="String" Name="Carnet" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="NombreSedeXTEC" Nullable="false" MaxLength="50" />
+    <Property Type="Double" Name="Cantidad_Material" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="TEColonesEntregados_Result">
+    <Property Type="Int32" Name="Mes" Nullable="true" />
+    <Property Type="Double" Name="Puntos" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ToneladasSede_Result">
+    <Property Type="String" Name="Sede" Nullable="false" MaxLength="50" />
+    <Property Type="Double" Name="PesoTotal" Nullable="true" />
   </ComplexType>
 </Schema>

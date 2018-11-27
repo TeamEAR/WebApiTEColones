@@ -430,5 +430,30 @@ namespace WebApiTEColones
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<double>>("Tacometro");
         }
+    
+        public virtual ObjectResult<ColumnaSimple_Result> ColumnaSimple()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ColumnaSimple_Result>("ColumnaSimple");
+        }
+    
+        public virtual ObjectResult<FilaApilada_Result> FilaApilada()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<FilaApilada_Result>("FilaApilada");
+        }
+    
+        public virtual ObjectResult<TOP10_Result> TOP10()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<TOP10_Result>("TOP10");
+        }
+    
+        public virtual ObjectResult<TEColonesEntregados_Result> TEColonesEntregados()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<TEColonesEntregados_Result>("TEColonesEntregados");
+        }
+    
+        public virtual ObjectResult<ToneladasSede_Result> ToneladasSede()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<ToneladasSede_Result>("ToneladasSede");
+        }
     }
 }

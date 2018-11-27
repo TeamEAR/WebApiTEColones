@@ -397,6 +397,8 @@
     <Parameter Name="PesoCambio" Type="float" Mode="In" />
     <Parameter Name="TecolonesAdquiridos" Type="float" Mode="In" />
   </Function>
+  <Function Name="ColumnaSimple" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="FilaApilada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="InsertarAdministrador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="Nombre" Type="varchar" Mode="In" />
     <Parameter Name="PrimerApellido" Type="varchar" Mode="In" />
@@ -484,6 +486,9 @@
     <Parameter Name="EquivalenciaTEColones" Type="float" Mode="In" />
   </Function>
   <Function Name="Tacometro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="TEColonesEntregados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ToneladasSede" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="TOP10" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="TEColonesModelStoreContainer">
     <EntitySet Name="Administrador" EntityType="Self.Administrador" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BitacoraBeneficio" EntityType="Self.BitacoraBeneficio" Schema="dbo" store:Type="Tables" />

@@ -16,7 +16,7 @@ namespace WebApiTEColones
             // Rutas de API web
             config.MapHttpAttributeRoutes();
 
-            config.MessageHandlers.Add(new TokenValidationHandler());
+            //config.MessageHandlers.Add(new TokenValidationHandler());
 
             //Evito las referencias circulares al trabajar con Entity FrameWork         
             //config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
